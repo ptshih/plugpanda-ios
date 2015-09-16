@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		285558E51BAA066500DF6153 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285558E41BAA066500DF6153 /* ShareViewController.swift */; };
+		285558E81BAA066500DF6153 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285558E61BAA066500DF6153 /* MainInterface.storyboard */; };
+		285558EC1BAA066500DF6153 /* PlugPandaLocation.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 285558E21BAA066400DF6153 /* PlugPandaLocation.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		28E54DC61BA8AC1600054C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E54DC51BA8AC1600054C03 /* AppDelegate.swift */; };
 		28E54DC81BA8AC1600054C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E54DC71BA8AC1600054C03 /* ViewController.swift */; };
 		28E54DCB1BA8AC1600054C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E54DC91BA8AC1600054C03 /* Main.storyboard */; };
@@ -16,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		285558EA1BAA066500DF6153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28E54DB81BA8AC1600054C03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285558E11BAA066400DF6153;
+			remoteInfo = PlugPandaLocation;
+		};
 		28E54DD61BA8AC1600054C03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 28E54DB81BA8AC1600054C03 /* Project object */;
@@ -25,7 +35,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		285558F01BAA066500DF6153 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				285558EC1BAA066500DF6153 /* PlugPandaLocation.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		285558DD1BAA053B00DF6153 /* PlugPanda.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PlugPanda.entitlements; sourceTree = "<group>"; };
+		285558E21BAA066400DF6153 /* PlugPandaLocation.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PlugPandaLocation.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		285558E41BAA066500DF6153 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		285558E71BAA066500DF6153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		285558E91BAA066500DF6153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285558F11BAA06A800DF6153 /* PlugPandaLocation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PlugPandaLocation.entitlements; sourceTree = "<group>"; };
 		28E54DC01BA8AC1600054C03 /* PlugPanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlugPanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E54DC41BA8AC1600054C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E54DC51BA8AC1600054C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		285558DF1BAA066400DF6153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28E54DBD1BA8AC1600054C03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,20 +93,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		285558E31BAA066500DF6153 /* PlugPandaLocation */ = {
+			isa = PBXGroup;
+			children = (
+				285558F11BAA06A800DF6153 /* PlugPandaLocation.entitlements */,
+				285558E41BAA066500DF6153 /* ShareViewController.swift */,
+				285558E61BAA066500DF6153 /* MainInterface.storyboard */,
+				285558E91BAA066500DF6153 /* Info.plist */,
+			);
+			path = PlugPandaLocation;
+			sourceTree = "<group>";
+		};
 		28E54DB71BA8AC1600054C03 = {
 			isa = PBXGroup;
 			children = (
 				28E54DC21BA8AC1600054C03 /* PlugPanda */,
 				28E54DD81BA8AC1600054C03 /* PlugPandaTests */,
+				285558E31BAA066500DF6153 /* PlugPandaLocation */,
 				28E54DC11BA8AC1600054C03 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		28E54DC11BA8AC1600054C03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				28E54DC01BA8AC1600054C03 /* PlugPanda.app */,
 				28E54DD51BA8AC1600054C03 /* PlugPandaTests.xctest */,
+				285558E21BAA066400DF6153 /* PlugPandaLocation.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +129,7 @@
 		28E54DC21BA8AC1600054C03 /* PlugPanda */ = {
 			isa = PBXGroup;
 			children = (
+				285558DD1BAA053B00DF6153 /* PlugPanda.entitlements */,
 				28E54DC51BA8AC1600054C03 /* AppDelegate.swift */,
 				28E54DC71BA8AC1600054C03 /* ViewController.swift */,
 				28E54DC91BA8AC1600054C03 /* Main.storyboard */,
@@ -115,6 +168,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		285558E11BAA066400DF6153 /* PlugPandaLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285558ED1BAA066500DF6153 /* Build configuration list for PBXNativeTarget "PlugPandaLocation" */;
+			buildPhases = (
+				285558DE1BAA066400DF6153 /* Sources */,
+				285558DF1BAA066400DF6153 /* Frameworks */,
+				285558E01BAA066400DF6153 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlugPandaLocation;
+			productName = PlugPandaLocation;
+			productReference = 285558E21BAA066400DF6153 /* PlugPandaLocation.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		28E54DBF1BA8AC1600054C03 /* PlugPanda */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28E54DDF1BA8AC1600054C03 /* Build configuration list for PBXNativeTarget "PlugPanda" */;
@@ -122,10 +192,12 @@
 				28E54DBC1BA8AC1600054C03 /* Sources */,
 				28E54DBD1BA8AC1600054C03 /* Frameworks */,
 				28E54DBE1BA8AC1600054C03 /* Resources */,
+				285558F01BAA066500DF6153 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				285558EB1BAA066500DF6153 /* PBXTargetDependency */,
 			);
 			name = PlugPanda;
 			productName = PlugPanda;
@@ -156,11 +228,27 @@
 		28E54DB81BA8AC1600054C03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Peter Shih";
 				TargetAttributes = {
+					285558E11BAA066400DF6153 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2L88WGK9R6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					28E54DBF1BA8AC1600054C03 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2L88WGK9R6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					28E54DD41BA8AC1600054C03 = {
 						CreatedOnToolsVersion = 6.4;
@@ -169,7 +257,7 @@
 				};
 			};
 			buildConfigurationList = 28E54DBB1BA8AC1600054C03 /* Build configuration list for PBXProject "PlugPanda" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -183,11 +271,20 @@
 			targets = (
 				28E54DBF1BA8AC1600054C03 /* PlugPanda */,
 				28E54DD41BA8AC1600054C03 /* PlugPandaTests */,
+				285558E11BAA066400DF6153 /* PlugPandaLocation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		285558E01BAA066400DF6153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285558E81BAA066500DF6153 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28E54DBE1BA8AC1600054C03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +305,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		285558DE1BAA066400DF6153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285558E51BAA066500DF6153 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28E54DBC1BA8AC1600054C03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +333,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		285558EB1BAA066500DF6153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 285558E11BAA066400DF6153 /* PlugPandaLocation */;
+			targetProxy = 285558EA1BAA066500DF6153 /* PBXContainerItemProxy */;
+		};
 		28E54DD71BA8AC1600054C03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 28E54DBF1BA8AC1600054C03 /* PlugPanda */;
@@ -236,6 +346,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		285558E61BAA066500DF6153 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285558E71BAA066500DF6153 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		28E54DC91BA8AC1600054C03 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -255,6 +373,39 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		285558EE1BAA066500DF6153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PlugPandaLocation/PlugPandaLocation.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = PlugPandaLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.petershih.PlugPanda.PlugPandaLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		285558EF1BAA066500DF6153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PlugPandaLocation/PlugPandaLocation.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PlugPandaLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.petershih.PlugPanda.PlugPandaLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		28E54DDD1BA8AC1600054C03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,6 +427,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,9 +494,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = PlugPanda/PlugPanda.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PlugPanda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petershih.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -352,9 +513,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = PlugPanda/PlugPanda.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PlugPanda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petershih.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -372,6 +542,7 @@
 				);
 				INFOPLIST_FILE = PlugPandaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petershih.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlugPanda.app/PlugPanda";
 			};
@@ -387,6 +558,7 @@
 				);
 				INFOPLIST_FILE = PlugPandaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petershih.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlugPanda.app/PlugPanda";
 			};
@@ -395,6 +567,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		285558ED1BAA066500DF6153 /* Build configuration list for PBXNativeTarget "PlugPandaLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285558EE1BAA066500DF6153 /* Debug */,
+				285558EF1BAA066500DF6153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		28E54DBB1BA8AC1600054C03 /* Build configuration list for PBXProject "PlugPanda" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -411,6 +591,7 @@
 				28E54DE11BA8AC1600054C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28E54DE21BA8AC1600054C03 /* Build configuration list for PBXNativeTarget "PlugPandaTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +600,7 @@
 				28E54DE41BA8AC1600054C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
